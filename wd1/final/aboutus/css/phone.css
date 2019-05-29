@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    z-index: 0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.eot');
+    src: url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.eot');
+    src: url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*This is the top logo*/
+
+.topimagebox {
+    width: 90%;
+    margin-bottom: 0%;
+    margin-top: .5em;
+}
+
+/*The nav bar*/
+
+nav {  
+    border-bottom: 0;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    -webkit-box-shadow: 0px 32px 45px 15px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 32px 45px 15px rgba(0,0,0,0);
+    box-shadow: 0px 32px 45px 15px rgba(0,0,0,0);
+}  
+
+nav ul {  
+    display: none;  
+    height: 20em;  
+    background-color: #605560;
+    width: 100%;
+}  
+
+nav ul li {
+    width: 100%;
+}
+
+nav a#pull {  
+    display: block;  
+    background-color: #947e92;  
+    width: 100%;  
+    position: relative;  
+}  
+ 
+/* We are controlling the following CSS with the jQuery and also the image for the icon has been place in the following rule */
+nav a#pull:after {  
+    content:"";  
+    background: url('../../images/hamburger.png') no-repeat;  
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}  
+
+nav a {
+    font-family: 'bebasregular';
+    color: #e5e8f2;
+    text-align: left;
+    padding-left: 1em;
+}
+
+/*Banner Image*/
+
+.bluebar {
+    height: 4em;  
+    width: 99.42%;  
+    background: #9dcbcf;   
+    border: 3px solid #947E92;
+    margin-top: -8em;
+    margin-bottom: 5em;
+    -webkit-box-shadow: 0px 10px 26px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 10px 26px 0px rgba(0,0,0,0.39);
+    box-shadow: 0px 10px 26px 0px rgba(0,0,0,0.39);
+}
+
+/*Top text*/
+
+.home {
+    display: inline;
+}
+
+/*Seperators*/
+
+.line {
+    width: 100%;
+}
+
+.circle {
+    width: 8%;
+    margin-bottom: -1.75em;
+    margin-top: 1em;
+}
+
+/*Multiple artices*/
+
+.infoone {
+    width: 100%;
+}
+
+.febfifteen {
+    float: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    margin-bottom: 2em;
+}
+
+.arrow {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16em;
+    color: #34314f;
+    margin-top: -.5em;
+}
+
+.box {
+    width: 80%;
+}   
+
+/*Different types of types */
+
+h1 {
+    font-family: 'bebasregular';
+    text-align: center;
+    color: #e5e8f2;
+    font-size: 2.25em;
+    border: 2px dashed #ffffff;
+    padding: .5em;
+    margin-left: -.5em;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+h2 {
+    font-family: 'bebasregular';
+    text-align: justify;
+    color: #b8c6d3;
+    width: 80%;
+    font-size: 1.5em;
+    margin-top: .5em;
+    margin-left: -3em;
+    margin-bottom: -1em;
+}
+
+h3 {
+    font-family: 'bebasregular';
+    text-align: center;
+    color: #6f4f8f;
+    font-size: 2.5em;
+}
+
+h4 {
+    font-family: 'source_sans_proregular';
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    font-size: 2em;
+}
+
+h5 {
+    font-family: 'bebasregular';
+    text-align: center;
+    color: #72678e;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+p {
+    margin-left: auto;
+    color: #6f4f8f;
+    margin-right: auto;
+    width: 100%;
+    font-family: 'bebasregular';
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: .5em;
+    margin-top: .5em;
+}

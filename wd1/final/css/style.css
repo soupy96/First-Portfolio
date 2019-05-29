@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    z-index: 0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.eot');
+    src: url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20150219-111727/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'god_bless_americaitalic';
+    src: url('../fonts/webfontkit-20150219-111727/God Bless America-webfont.eot');
+    src: url('../fonts/webfontkit-20150219-111727/God Bless America-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20150219-111727/God Bless America-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20150219-111727/God Bless America-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20150219-111727/God Bless America-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20150219-111727/God Bless America-webfont.svg#god_bless_americaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.eot');
+    src: url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Wrapper*/
+
+.wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*This is the top logo*/
+
+.topimagebox {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: -7.5%;
+    margin-top: 2em;
+    z-index: 2;
+}
+
+.topimage {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/*The nav bar*/
+
+nav {  
+    height: 5em;  
+    width: 99.42%;  
+    background: #9dcbcf;  
+    font-size: .9em;  
+    font-family: 'Helvetica', Arial, sans-serif;  
+    font-weight: bold;  
+    position: relative;  
+    border-bottom: .1em solid #947e92;
+    border: 5px solid #947E92;
+    z-index: 1;  
+    margin-bottom: 5em;
+    -webkit-box-shadow: 0px 32px 45px 15px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 32px 45px 15px rgba(138,138,138,1);
+    box-shadow: 0px 32px 45px 15px rgba(138,138,138,1);
+}
+
+nav ul {  
+    padding: 0;  
+    margin: auto;  
+    width: 81%; 
+    height: 2.5em;
+}  
+ 
+nav li {  
+    display: inline;  
+    float: left; 
+}  
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+} 
+
+.clearfix:after {  
+    clear: both;  
+}  
+
+.clearfix {  
+    *zoom: 1;  
+}  
+
+nav a {  
+    color: #fff;  
+    display: inline-block;  
+    width: 200px;  
+    text-align: center;  
+    text-decoration: none;  
+    line-height: 2.5em;  
+    text-shadow: 1px 1px 0px #283744;  
+}  
+ 
+nav li a {    
+    box-sizing:border-box;  
+    -moz-box-sizing:border-box;  
+    -webkit-box-sizing:border-box;  
+}  
+ 
+nav li:last-child a {  
+    border-right: 0;  
+}  
+ 
+nav a:hover, nav a:active {  
+    background-color: #8c99a4;
+    -webkit-text-fill-color: #947e92;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #ffffff;
+} 
+ 
+nav a#pull {  
+    display: none;  
+}
+
+nav ul li a {
+    font-family: 'bebasregular';
+    color: #947E92;
+   -webkit-text-fill-color: white;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #947E92;
+   font-size: 2em;
+   text-shadow: 5px 0px 6px rgba(150, 150, 150, 1);
+}
+
+nav ul li:nth-child(2) {
+    margin-right: 40%;
+}
+
+/*Banner Image*/
+
+.bannerimage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.home {
+    display: none;
+}
+
+/*Seperators*/
+
+.circle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    margin-bottom: -3em;
+    margin-top: 1em;
+}
+
+.circlecircle {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/*First box with images of food*/
+
+.infoone {
+    background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(216,208,203,1));
+    background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(216,208,203,1));
+    background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(216,208,203,1));
+    background: linear-gradient(to top, rgba(255,0,0,0), rgba(216,208,203,1));
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-top: 4px solid #C2BAB4;
+    padding-bottom: 1em;
+}
+
+.febfifteen {
+    float: left;
+    width: 25%;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cupcakeimage {
+    float: left;
+    width: 80%;
+    padding-left: 2em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.circletwo {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 7.25em;
+    margin-top: -.5em;
+    margin-bottom: 0em;
+    width: 20%;
+}
+
+#readmore {
+    text-align: center;
+    margin-left: 6em;
+    width: 45%;
+    border-color: #72678e;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: .5em;
+    padding-left: 1.5em;
+    padding-right:1.5em;
+    margin-top: 1em;
+    color: #34314f;
+    font-size: 1em;
+    background-color: #e5e8f2;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+/*Second box with icons*/
+
+.icons {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    float: left;
+    padding-left: 5.5em;
+}
+
+/*Footer*/
+
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #9dcbcf;
+    border-top: 4px solid #947e92;
+}
+
+/*Different types of types */
+
+h1 {
+    font-family: 'bebasregular';
+    text-align: center;
+    color: #6f4f8f;
+    width: 100%;
+    font-size: 1.25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: 'source_sans_proregular';
+    text-align: justify;
+    color: #808080;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    font-size: 1em;
+}
+
+h3 {
+    font-family: 'god_bless_americaitalic';
+    text-align: center;
+    margin-top: -2.75em;
+    margin-bottom: 3em;
+    margin-left: -2.5em;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+h4 {
+    font-family: 'source_sans_proregular';
+    text-align: justify;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2em;
+    padding-right: 1em;
+    margin-top: .5em;
+    float: left;
+}
+
+h5 {
+    font-family: 'bebasregular';
+    text-align: center;
+    color: #72678e;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-right: 5.5em;
+}
+
+p {
+    margin-left: auto;
+    color: #6f4f8f;
+    margin-right: auto;
+    width: 100%;
+    font-family: 'bebasregular';
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: .5em;
+    margin-top: .5em;
+}

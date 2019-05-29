@@ -1,0 +1,92 @@
+
+{
+
+	"HTMLFileName":"336x280.html",
+	"expanded:images/dd571d4440463872011e7cc643fa2cae2.png":"nil",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"expanded:images/dd571d4440463872011e7cc643fa2cae.png":"nil",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"expanded:images/mich.png":"nil",
+	"SnapToGuides":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"StageZoomFactor":"200",
+	"expanded:images/camaro-png.png":"nil",
+	"TransitionIdCounter":"15",
+	"CompZoomFactor":"100",
+	"viewStartY":"0",
+	"pixelsPerMs":"0.2",
+	"pref__general__SmartGuidesEnabled":"false",
+	"expanded:images/mercedes_rover_used_car_finance.png":"nil",
+	"usedBOM":"false",
+	"nextElementColorIndex":"11",
+	"stage-Default Timeline_playhead_ms":"6750",
+	"symbol_stage":{
+		"element_${Text}":{
+			"timelineColor2":"0x5a558a",
+			"timelineColor3":"0x4a485e",
+			"animationEnabled":"true",
+			"timelineColor":"0x63599f"},
+		"dummyStageParentWidth":"336px",
+		"element_${michelin-tires-logo}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"animationEnabled":"true",
+			"timelineColor":"0x008dc8"},
+		"dummyStageParentHeight":"280px",
+		"element_${mich}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"animationEnabled":"false",
+			"timelineColor":"0x2f73ad"},
+		"element_${mercedes_rover_used_car_finance}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"animationEnabled":"true",
+			"timelineColor":"0x00a9fa"},
+		"element_${Text2}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"animationEnabled":"true",
+			"timelineColor":"0xceaef4"},
+		"defaultStageParentHeight":"280px",
+		"element_${dd571d4440463872011e7cc643fa2cae}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"animationEnabled":"false",
+			"timelineColor":"0x00bda4"},
+		"element_${Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentWidth":"336px",
+		"element_${dd571d4440463872011e7cc643fa2cae2}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"animationEnabled":"true",
+			"timelineColor":"0x00a096"},
+		"element_${_2013_ford_focus_st}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"animationEnabled":"true",
+			"timelineColor":"0x91c767"},
+		"element_${camaro-png}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"true",
+			"timelineColor":"0x50bd82"}},
+	"expanded:images/michelin-tires-logo.png":"nil",
+	"expanded:images/2013_ford_focus_st.png":"nil"}

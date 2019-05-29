@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Final - Home</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
+   <link rel="stylesheet" type="text/css" href="css/tablet.css" media="all and (max-width:1024px) and (min-width:600px)" />
+   <link rel="stylesheet" type="text/css" href="css/phone.css" media="all and (max-width:600px) and (min-width:320px)" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+ 
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+ 
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>	
+	<body>
+	<section class="topimagebox">
+		<img class="topimage" src="images/topimage.png" alt="Logo" />
+	</section>
+	<section class="bluebar">
+	</section>
+		<nav class="clearfix">  
+    		<ul class="clearfix">  
+        		<li><a href="index.html">HOME</a></li>  
+        		<li><a href="aboutus/aboutus.html">ABOUT US</a></li>  
+       	 		<li><a href="findus/findus.html">FIND US</a></li>  
+        		<li><a href="events/events.html">EVENTS</a></li>  
+    		</ul>  
+    		<a href="#" id="pull">Menu</a>  
+		</nav>
+		<section class="home">
+			<p>
+				home
+			</p>
+		</section>
+		<section class="cupcaketop">
+			<img class="bannerimage" src="images/banner.png" alt="Cupcakes" />
+		</section>
+		<section class="circle">
+			<img class="circlecircle"src="images/circle.png" alt="Circle" />
+		</section>
+		<section class="infoone">
+			<article class="febfifteen">
+				<img class="cupcakeimage" src="images/cupcake.png" alt="Cupcake"/>
+				<img class="circletwo"src="images/circle.png" alt="Circle" />
+				<h3>
+					15 
+					<br>
+					feb
+				</h3>
+				<h1>
+					Cupcake Ipsum Marzipam
+				</h1>
+				<h2>
+					Tiramisu macaroon cheesecake unerdwear.com. Cookie gingerbread donut. Sugar plum croissant marzipan liquorice I love liquorice cotton candy.
+				</h2>
+				<input id="readmore" type="submit" name="reset" value="Read More" />
+			</article>
+			<article class="febfifteen">
+				<img class="cupcakeimage" src="images/fruitcake.png" alt="Fruitcake"/>
+				<img class="circletwo"src="images/circle.png" alt="Circle" />
+				<h3>
+					01 
+					<br>
+					feb
+				</h3>
+				<h1>
+					Fruitcake lemon drops
+				</h1>
+				<h2>
+					Topping soufflé soufflé sweet roll halvah jelly beans. Apple pie I love liquorice. Muffin chocolate banner candy unerdwear.com. Tiramisu donut lollipop.
+				</h2>
+				<input id="readmore" type="submit" name="reset" value="Read More" />
+			</article>
+			<article class="febfifteen">
+				<img class="cupcakeimage" src="images/Tiramisu.png" alt="Tiramisu"/>
+				<img class="circletwo"src="images/circle.png" alt="Circle" />
+				<h3>
+					19 
+					<br>
+					jan
+				</h3>
+				<h1>
+					Tiramisu macaroon 
+				</h1>
+				<h2>
+					Unerdwear.com I love I love oat cake wafer. Candy fruitcake I love marzipan marshmallow sweet roll. Macaroon brownie pie icing apple pie chupa chups jelly-o.
+				</h2>
+				<input id="readmore" type="submit" name="reset" value="Read More" />
+			</article>
+			<article class="febfifteen">
+				<img class="cupcakeimage" src="images/croissant.png" alt="Croissant"/>
+				<img class="circletwo"src="images/circle.png" alt="Circle" />
+				<h3>
+					05 
+					<br>
+					jan
+				</h3>
+				<h1>
+					sesame snaps croissant
+				</h1>
+				<h2>
+					I love macaroon fruitcake chocolate bar wafer carrot cake cheesecake ice cream I love. Caramels chocolate bar chupa chups cake. Sugar plum tiramisu jujubes.
+				</h2>
+				<input id="readmore" type="submit" name="reset" value="Read More" />
+			</article>
+			<p class="clearfloat"> 
+				&nbsp;
+			</p>
+		</section>
+		<section class="circle">
+			<img class="circlecircle"src="images/circle.png" alt="Circle" />
+		</section>
+		<section class="infoone">
+			<article class="febfifteen">
+				<img class="icons" src="images/apple.png" alt="Apple"/>
+				<h4>
+					Lemon drops apple pie carrot cake sweet roll. Powder sugar plum tiramisu jelly chocolate cake I love. Candy tootsie roll cheesecake candy canes tootsie roll gummi bears. Muffin gummi bears biscuit soufflé tootsie roll candy cake jelly-o.
+				</h4>
+				<input id="readmore" type="submit" name="reset" value="Read More" />
+			</article>
+			<article class="febfifteen">
+				<img class="icons" src="images/cherry.png" alt="Cherry"/>
+				<h4>
+					Pastry I love unerdwear.com marshmallow donut ice cream dragée chocolate chocolate cake. Apple pie wafer gingerbread unerdwear.com cupcake pudding soufflé. Caramels carrot cake donut sesame snaps muffin.
+				</h4>
+				<input id="readmore" type="submit" name="reset" value="Read More" />
+			</article>
+			<article class="febfifteen">
+				<img class="icons" src="images/growing.png" alt="Growing"/>
+				<h4>
+					Applicake topping chocolate I love. I love carrot cake lollipop marshmallow soufflé lemon drops. Donut bear claw jelly beans macaroon lemon drops. Ice cream cotton candy apple pie lemon drops.
+				</h4>
+				<input id="readmore" type="submit" name="reset" value="Read More" />
+			</article>
+			<article class="febfifteen">
+				<img class="icons" src="images/camera.png" alt="Camera"/>
+				<h4>
+					Oat cake croissant wafer jelly-o. Fruitcake jelly beans marzipan bonbon apple pie fruitcake I love sesame snaps I love. Cake soufflé topping chocolate bar sweet gummi bears cake. Powder soufflé topping soufflé croissant bonbon chocolate cookie.
+				</h4>
+				<input id="readmore" type="submit" name="reset" value="Read More" />
+			</article>
+			<p class="clearfloat"> 
+				&nbsp;
+			</p>
+		</section>
+		<section class="footer">
+			<h5>
+				© IDEA.COM 2014 - 2015
+			</h5>
+		</section>
+	</body>
+</html>

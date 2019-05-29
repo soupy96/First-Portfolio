@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.eot');
+    src: url('../../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.woff') format('woff'),
+         url('../../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+	font-family: 'quicksandregular';
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-family: 'quicksandregular';
+	text-decoration: none;
+}
+
+a:link {
+    color: #59554E;
+    text-decoration: none;
+}
+
+a:visted {
+    color: #59554E;
+    font-family: 'Helvetica', arial, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A1C1BE;
+    text-decoration: none;
+}
+
+a:active {
+    color: #59554E;
+    text-decoration: none;
+}
+
+.wrapper {
+	margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}

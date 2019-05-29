@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Final - Find Us</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
+   <link rel="stylesheet" type="text/css" href="css/tablet.css" media="all and (max-width:1024px) and (min-width:600px)" />
+   <link rel="stylesheet" type="text/css" href="css/phone.css" media="all and (max-width:600px) and (min-width:320px)" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(48.852968, 2.349902),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+   <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+ 
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+ 
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>	
+	<body>
+		<section class="topimagebox">
+			<img class="topimage" src="../images/topimage.png" alt="Logo" />
+		</section>
+		<section class="bluebar">
+		</section>
+		<nav class="clearfix">  
+    		<ul class="clearfix">  
+        		<li><a href="../index.html">HOME</a></li>  
+        		<li><a href="../aboutus/aboutus.html">ABOUT US</a></li>  
+       	 		<li><a href="../findus/findus.html">FIND US</a></li>  
+        		<li><a href="../events/events.html">EVENTS</a></li>  
+    		</ul>  
+    		<a href="#" id="pull">Menu</a>  
+		</nav>
+		<section class="home">
+			<p>
+				find us
+			</p>
+		</section>
+		<section id="map-canvas">
+		</section>
+		<section class="lineline">
+		</section>
+		<section class="circle">
+			<img src="../images/circle.png" class="circlecircle" alt="Circle" />
+		</section>
+		<section class="right">
+			<img src="../images/pinpoint.png" alt="Pinpoint" class="pinpoint" />
+			<h2 class="address">
+				6 Parvis Notre-Dame
+				<br>
+				75004 Paris, France
+				<br>
+				<br>
+			</h2>
+			<img src="../images/speech.png" alt="Speech" class="speech" />
+			<h3>
+				Phone: +33 1 42 34 56 10
+			</h3>
+			<br>
+			<br>
+			<br>
+			<br>
+			<img src="../images/pencil.png" alt="Pencil" class="pencil" />
+			<h4>
+				MAIL: <span class="mail">info@mail.com </span>
+			</h4>
+			<h5>
+				Cupcake ipsum dolor sit amet croissant jelly lemon drops gingerbread. Bonbon sugar plum cake candy canes I love lemon drops applicake I love jelly beans. Danish fruitcake candy canes marzipan bonbon gummies marzipan soufflé sweet. I love chupa chups cake dessert chocolate. Dessert cotton candy halvah dragée cupcake marzipan. Pastry croissant sweet bonbon lemon drops apple pie weet roll. Bonbon cheesecake pudding sweet I love. Jelly dragée chocolate cake chocolate bar. Croissant jelly cookie chocolate pudding sweet roll sugar plum applicake I love.
+				<br>
+				<br>
+				Chocolate cake marshmallow pastry tiramisu danish muffin pie toffee. Chocolate tiramisu marzipan sesame snaps jelly. Chocolate bar liquorice liquorice ice cream sweet icing. Cupcake chocolate cake bonbon sweet sweet roll brownie applicake croissant. Jelly beans I love I love carrot cake marshmallow. Wafer I love dessert. Fruitcake candy caramels donut apple pie. Macaroon marzipan marzipan danish croissant tiramisu. Gummies chocolate donut bonbon. Sesame snaps cupcake icing sweet I love icing.
+			</h5>
+		</section>
+		<section class="circlehidden">
+			<img src="../images/circle.png" class="circlecirclehidden" alt="Circle" />
+		</section>
+		<section class="linehidden">
+		</section>
+		<form class="left">
+			<h1>
+				your name
+			</h1>
+     			<input type="text" name="yourname" size="45" class="boxbox" value="Required">
+     		<h1>
+     			your email
+     		</h1>
+     			<input type="text" name="yourname" size="45" class="boxbox" value="Required">
+     		<h1>
+     			Subject
+     		</h1>
+     			<input type="text" name="yourname" size="45" class="boxbox" value="Required">
+     		<h1>
+     			your message
+     		</h1>
+     			<textarea name="comments" rows="8" cols="55" class="boxbox">Your message goes here...</textarea>
+     			<br>
+     			<input id="button" type="submit" name="reset" value="Submit" />
+		</form>
+		<section class="circle">
+			<img src="../images/circle.png" class="circlecircle" alt="Circle" />
+		</section>
+		<section class="line">
+		</section>
+		<section class="icons">
+			<a href="https://www.facebook.com/"><img class="iconsiconsf" src="../final_project/happy_socialmedia/fb.png" onmouseover="this.src='../final_project/happy_socialmedia/fb-(t).png'" onmouseout="this.src='../final_project/happy_socialmedia/fb.png'" alt="Facebook Icon" /></a>
+			<a href="https://twitter.com/?lang=en"><img class="iconsiconst" src="../final_project/happy_socialmedia/twitter.png" onmouseover="this.src='../final_project/happy_socialmedia/twitter-(t).png'" onmouseout="this.src='../final_project/happy_socialmedia/twitter.png'" alt="Twitter Icon" /></a>
+			<a href="https://www.pinterest.com/"><img class="iconsiconsp" src="../final_project/happy_socialmedia/pinterest.png" onmouseover="this.src='../final_project/happy_socialmedia/pinterest-(t).png'" onmouseout="this.src='../final_project/happy_socialmedia/pinterest.png'" alt="Pintrest Icon" /></a>
+			<a href="https://www.rss.com/"><img class="iconsiconsr" src="../final_project/happy_socialmedia/rss.png" onmouseover="this.src='../final_project/happy_socialmedia/rss-(t).png'" onmouseout="this.src='../final_project/happy_socialmedia/rss.png'" alt="Rss Icon" /></a>
+		</section>
+		<section class="footer">
+			<h6>
+				© IDEA.COM 2014 - 2015
+			</h6>
+		</section>
+	</body>
+</html>

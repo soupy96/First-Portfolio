@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+body {
+	padding-top: 1em;
+	margin: 0;
+	width: 100%;
+	background: url(http://www.designbolts.com/wp-content/uploads/2013/02/Light-aluminum-Grey-Seamless-Pattern-For-Website-Background.jpg);
+}
+
+h2 {
+	font-size: 100px;
+	font-family: 'Helvetica', arial, sans-serif;
+	margin-bottom:.25em;
+	margin-top:.25em;
+	text-align: center;
+	font-style: italic;
+	color: #666666
+
+}
+
+h3 {
+	font-size: 25px;
+	color: #999999
+}
+
+h5 {
+	font-family: 'Helvetica', arial, sans-serif;
+	color: #666666
+}
+
+p {
+	font-family: 'Helvetica', arial, sans-serif;
+	font-size: 15px;
+	color: #999999
+}
+
+.wrapper {
+	width:70%;
+	margin-right: auto;
+	margin-left: 1em;
+	border: 1px #666666 solid;
+	background-color: #cccccc;
+	padding-bottom: 1em;
+	float: left;
+}
+
+.linksbox {
+	width: 100%;
+	padding-bottom: 1em;
+	text-align: center;
+	color: #666666;
+	margin: 0;
+}
+
+.contentbox {
+	border: 2px #cccccc dashed;
+	margin: 0em;
+	margin-right: 1em;
+	margin-left: 1em;
+	background-color: #ffffff;
+	padding-left: 1em;
+	float: left;
+	padding-right: 2.25em;
+	padding-top: .5em;
+}
+
+.wrapper2 {
+	width:25%;
+	margin-right: 1em;
+	margin-left: 1em;
+	border: 1px #666666 solid;
+	background-color: #cccccc;
+	float: right;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.righttitles {
+	text-align: center;
+	border-bottom: 1px #666666 dashed;
+	border-top: 1px #666666 solid;
+	padding-top: 0;
+	margin-top: -.35em;
+	margin-right: -.32em;
+	margin-left: -.32em;
+	background: url(http://www.designbolts.com/wp-content/uploads/2013/02/Light-aluminum-Grey-Seamless-Pattern-For-Website-Background.jpg);
+}
+
+.contentbox2 {
+	margin: 0em;
+	margin-right: 1em;
+	margin-left: 1em;
+	background-color: #ffffff;
+	padding-left: .5em;
+	padding-right: .5em;
+	float: right;
+	padding-top: .5em;
+	margin-bottom: 1em;
+	border: 1px #666666 solid;
+	margin-top: 0;
+}
+
+.contentbox3 {
+	margin: 0em;
+	margin-right: 1em;
+	margin-left: 1em;
+	background-color: #ffffff;
+	padding-left: .5em;
+	padding-right: .5em;
+	float: right;
+	padding-top: .5em;
+	border: 1px #666666 solid;
+}
+
+.linksbox a:link {
+	color: #000000;
+	text-decoration: none;
+	padding: .5em;
+}
+
+.linksbox a:visited {
+	color: #666666;
+	font-family: 'Helvetica', arial, sans-serif;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+.linksbox a:hover {
+	color: #ff3300;
+	text-decoration: none;
+}
+
+.linksbox a:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.comments {
+	float: right;
+	background-color: #ffffff);
+}
+
+.footersection{
+	width: 100%;
+	text-align: center;
+	padding-top: .5em;
+	float: left;
+}

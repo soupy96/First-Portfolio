@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    z-index: 0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*fonts imported from font squirrel*/
+
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('../fonts/webfontkit-20150122-110448/pacifico-webfont.eot');
+    src: url('../fonts/webfontkit-20150122-110448/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20150122-110448/pacifico-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20150122-110448/pacifico-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20150122-110448/pacifico-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20150122-110448/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'godzilla_moviefontregular';
+    src: url('../fonts/webfontkit-20150317-101807/Godzilla MovieFont-webfont.eot');
+    src: url('../fonts/webfontkit-20150317-101807/Godzilla MovieFont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20150317-101807/Godzilla MovieFont-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20150317-101807/Godzilla MovieFont-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20150317-101807/Godzilla MovieFont-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20150317-101807/Godzilla MovieFont-webfont.svg#godzilla_moviefontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.eot');
+    src: url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*j slider */
+ .container {
+        width: auto
+      }
+
+/*wrapper*/
+
+.wrapper {
+	max-width: 1024px;
+	min-width: 600px;
+}
+
+/*social media tags*/
+
+.twittertag {
+	-webkit-transition-duration: 0.0s;
+	-moz-transition-duration: 0.0s;
+	-o-transition-duration: 0.0s;
+ 	transition-duration: 0.0s;
+}
+
+.twittertag:hover {
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.facebooktag {
+	-webkit-transition-duration: 0.0s;
+	-moz-transition-duration: 0.0s;
+	-o-transition-duration: 0.0s;
+ 	transition-duration: 0.0s;
+	float: left;
+}
+
+.facebooktag:hover {
+	transform: translate3d(0px, 0px, 0px);
+}
+
+/*hover images*/
+
+li.picturegallery span.bubble {
+	display: none;
+}
+
+li.picturegallery img:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/*right form*/
+
+#inputsq {
+	margin-left: -32%;
+	margin-top: 4%;
+}
+
+.submit:hover {
+	background-color: #f58723;
+	color: #ffffff;
+}
+
+.reset:hover {
+	background-color: #f58723;
+	color: #ffffff;
+}
+
+/*twitter posts*/
+
+.twitter {
+	height: 21.65em;
+}
+
+.twitterdots {
+	font-size: .75em;
+}
+
+/*stylizing my text*/
+
+h1 {
+	font-family: 'pacificoregular';
+	color: #c7ba99;
+	text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
+	font-size: 5em;
+	padding-left: 2em;
+}
+
+h2 {
+	font-family: 'godzilla_moviefontregular';
+	color: #f58723;
+	font-size: .95em;
+	padding-left: 1em;
+}
+
+h3 {
+	font-family: 'source_sans_proregular';
+	font-size: 1.5em;
+}
+
+h4 {
+	font-family: 'source_sans_proregular';
+	float: left;
+	padding-right: 5em;
+}
+
+h5 {
+	font-family: 'godzilla_moviefontregular';
+	color: #f58723;
+	font-size: 1.25em;
+	padding-left: 1em;
+	padding-top: .5em;
+}
+
+h6 {
+	color: #ffffff;
+	font-family: 'source_sans_proregular';
+	padding-left: 1em;
+	padding-top: 1em;
+	font-size: 1em;
+}
+
+p {
+	font-family: 'godzilla_moviefontregular';
+	color: #ffffff;
+	text-align: right;
+	font-size: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-right: 1.5em;
+}

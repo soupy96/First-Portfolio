@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Final - Events</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
+   <link rel="stylesheet" type="text/css" href="css/tablet.css" media="all and (max-width:1024px) and (min-width:600px)" />
+   <link rel="stylesheet" type="text/css" href="css/phone.css" media="all and (max-width:600px) and (min-width:320px)" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(48.852968, 2.349902),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+   <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+ 
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+ 
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>	
+	<body>
+		<section class="topimagebox">
+			<img class="topimage" src="../images/topimage.png" alt="Logo" />
+		</section>
+		<section class="bluebar">
+		</section>
+		<nav class="clearfix">  
+    		<ul class="clearfix">  
+        		<li><a href="../index.html">HOME</a></li>  
+        		<li><a href="../aboutus/aboutus.html">ABOUT US</a></li>  
+       	 		<li><a href="../findus/findus.html">FIND US</a></li>  
+        		<li><a href="../events/events.html">EVENTS</a></li>  
+    		</ul>  
+    		<a href="#" id="pull">Menu</a>  
+		</nav>
+		<section class="home">
+			<p class="events">
+				Events
+			</p>
+		</section>
+		<section class="firstgroup">
+			<img src="../images/pinkcupcake.png" alt="Pink Cupcake" class="boximage">
+			<img src="../images/circle.png" alt="Circle" class="textincircle">
+			<p>
+				15
+				<br>
+				feb
+			</p>
+			<h2>
+				Cupcake Ipsum Marzipam
+			</h2>
+			<h3>
+				Posted by Cupcake
+			</h3>
+			<article class="greybox">
+				<h4>
+					Cupcake ipsum dolor sit amet dragée lollipop muffin tiramisu. Powder biscuit I love donut powder gummies marzipan gummies marshmallow. Lollipop apple pie bear claw pudding brownie. 
+					<br>
+					<br>
+					I love icing caramels oat cake powder sugar plum lollipop. Applicake I love gingerbread donut lemon drops cake carrot cake marzipan. Powder I love croissant danish cookie donut chupa chups chocolate cake I love.
+				</h4>
+			</article>
+			<input id="button" type="submit" name="reset" value="Read More" />
+		</section>
+		<section class="line">
+		</section>
+		<section class="circle">
+			<img src="../images/circle.png" class="circlecircle" alt="Circle" />
+		</section>
+		<section class="secondgroup">
+			<img src="../images/chocolatecupcake.png" alt="Chocolate Cupcake" class="boximage">
+			<img src="../images/circle.png" alt="Circle" class="textincircle">
+			<p>
+				01
+				<br>
+				feb
+			</p>
+			<h2>
+				Fruitcake lemon drops
+			</h2>
+			<h3>
+				Posted by Cupcake
+			</h3>
+			<article class="greybox">
+				<h4>
+					Cupcake ipsum dolor sit amet apple pie. Tiramisu danish candy lemon drops apple pie I love. Topping tootsie roll sugar plum I love donut candy gummi bears icing. Gummi bears I love I love marshmallow marshmallow sweet fruitcake powder. 
+					<br> 
+					<br>
+					I love wafer sweet tiramisu dragée pie toffee I love. Cupcake tiramisu dessert. Apple pie bear claw cupcake cheesecakepowder bonbon caramels biscuit.
+				</h4>
+			</article>
+			<input id="buttonbutton" type="submit" name="reset" value="Read More" />
+		</section>
+		<aside class="right">
+			<h1>
+				RECENT POSTS
+			</h1>
+			<img src="../images/cupcake.png" alt="Cupcake" class="asideimages">
+			<h5>
+				Cupcake Ipsum Marzipam
+			</h5>
+			<img src="../images/fruitcake.png" alt="Fruitcake" class="asideimages">
+			<h5>
+				Fruitcake lemon drops
+			</h5>
+			<img src="../images/tiramisu.png" alt="Tiramisu" class="asideimages">
+			<h5>
+				Tiramisu macaroon
+			</h5>
+		</aside>
+		<section class="footer">
+			<h6>
+				© IDEA.COM 2014 - 2015
+			</h6>
+		</section>
+	</body>
+</html>

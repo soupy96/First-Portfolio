@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+	<head>
+   		<meta charset="UTF-8">
+   		<title>Assignment 3</title>
+  		<link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
+   		<link rel="stylesheet" type="text/css" href="css/tablet.css" media="all and (max-width:1024px) and (min-width:600px)" />
+   		<link rel="stylesheet" type="text/css" href="css/phone.css" media="all and (max-width:600px) and (min-width:320px)" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+   		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   		<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+  		<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+   		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+   		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+   		<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+		<script>
+            <!----- JQUERY FOR SLIDING NAVIGATION --->   
+            $(document).ready(function() {
+            $('a[href*=#]').each(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+            && location.hostname == this.hostname
+            && this.hash.replace(/#/,'') ) {
+            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $             targetAnchor: false;
+            if ($target) {
+            var targetOffset = $target.offset().top;
+            <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+            $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+            $('html, body').animate({scrollTop: targetOffset}, 1000);
+            return false;
+            });
+      		}
+    		}
+  			});
+			});
+		</script>
+	</head>
+	<body>  
+	<header id="header">
+		<div class="content">
+		<div id="logo"><a href=""> MIMES </a></div>
+			<nav id="nav">
+				<ul>
+					<li><a href="#slide1" class="active" title="Next Section" >Slide 1</a></li>
+					<li><a href="#slide2" title="Next Section">Slide 2</a></li>
+					<li><a href="#slide3" title="Next Section">Slide 3</a></li>
+					<li><a  href="#slide4" title="Next Section">Slide 4</a></li>
+					<li><a href="#slide5" title="Next Section">Slide 5</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>	
+	<div id="slide1">
+ 	</div> 
+	<div id="slide2">
+    </div> 
+	<div id="slide3"> 
+    </div> 
+	<div id="slide4"> 
+    </div> 
+	<div id="slide5"> 
+	</div>
+	</body>
+</html>

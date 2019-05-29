@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    z-index: 0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../../fonts/webfontkit-20150219-111727/BEBAS___-webfont.eot');
+    src: url('../../fonts/webfontkit-20150219-111727/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/webfontkit-20150219-111727/BEBAS___-webfont.woff2') format('woff2'),
+         url('../../fonts/webfontkit-20150219-111727/BEBAS___-webfont.woff') format('woff'),
+         url('../../fonts/webfontkit-20150219-111727/BEBAS___-webfont.ttf') format('truetype'),
+         url('../../fonts/webfontkit-20150219-111727/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.eot');
+    src: url('../../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.woff2') format('woff2'),
+         url('../../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.woff') format('woff'),
+         url('../../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.ttf') format('truetype'),
+         url('../../fonts/webfontkit-20150220-105345/SourceSansPro-Regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Wrapper*/
+
+.wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*This is the top logo*/
+
+.topimagebox {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: -8%;
+    margin-top: 2em;
+    z-index: 2;
+}
+
+.topimage {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/*The nav bar*/
+
+nav {  
+    height: 5em;  
+    width: 99.42%;  
+    background: #9dcbcf;  
+    font-size: .9em;  
+    font-family: 'Helvetica', Arial, sans-serif;  
+    font-weight: bold;  
+    position: relative;  
+    border-bottom: .1em solid #947e92;
+    border: 5px solid #947E92;
+    z-index: 1;  
+    margin-bottom: 5em;
+    -webkit-box-shadow: 0px 32px 45px 15px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 32px 45px 15px rgba(138,138,138,1);
+    box-shadow: 0px 32px 45px 15px rgba(138,138,138,1);
+}
+
+nav ul {  
+    padding: 0;  
+    margin: auto;  
+    width: 81%; 
+    height: 2.5em;
+}  
+ 
+nav li {  
+    display: inline;  
+    float: left; 
+}  
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+} 
+
+.clearfix:after {  
+    clear: both;  
+}  
+
+.clearfix {  
+    *zoom: 1;  
+}  
+
+nav a {  
+    color: #fff;  
+    display: inline-block;  
+    width: 200px;  
+    text-align: center;  
+    text-decoration: none;  
+    line-height: 2.5em;  
+    text-shadow: 1px 1px 0px #283744;  
+}  
+ 
+nav li a {    
+    box-sizing:border-box;  
+    -moz-box-sizing:border-box;  
+    -webkit-box-sizing:border-box;  
+}  
+ 
+nav li:last-child a {  
+    border-right: 0;  
+}  
+ 
+nav a:hover, nav a:active {  
+    background-color: #8c99a4;
+    -webkit-text-fill-color: #947e92;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #ffffff;
+} 
+ 
+nav a#pull {  
+    display: none;  
+}
+
+nav ul li a {
+    font-family: 'bebasregular';
+    color: #947E92;
+   -webkit-text-fill-color: white;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #947E92;
+   font-size: 2em;
+   text-shadow: 5px 0px 6px rgba(150, 150, 150, 1);
+}
+
+nav ul li:nth-child(2) {
+    margin-right: 40%;
+}
+
+/*Blue box code*/
+
+.home {
+    display: none;
+}
+
+.box {
+    background-color: #6773a6;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    padding: 2em;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/*Text under neath the blue box*/
+
+.colourtext {
+    margin-right: auto;
+    width: 110%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding-left: 6.5em;
+    padding-bottom: 3em;
+    margin-left: auto;
+}
+
+#candy {
+    color: #72678e;
+}
+
+#candycandy {
+    color: #72678e;
+}
+
+#candycandycandy {
+    color: #72678e;
+}
+
+/*Line with circle*/
+
+.line {
+    border-bottom: 2px solid #C2BAB4;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.5em;
+}
+
+.circle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    margin-top: -3.5em;
+    margin-bottom: -3em;
+}
+
+.circlecircle {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/*Huge box with text and images*/
+
+.infoone {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 1em;
+    margin-top: 3em;
+}
+
+.febfifteen {
+    float: left;
+    width: 20%;
+    padding-left: 3.5em;
+}
+
+.marshmellow {
+    width: 100%;
+    border-bottom: 5px solid #34314f;
+}
+
+.arrow {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 8.75em;
+    color: #34314f;
+    margin-top: -.5em;
+}
+
+.candy {
+    width: 100%;
+    border-bottom: 5px solid #34314f;
+}
+
+.pie {
+    width: 100%;
+    border-bottom: 5px solid #34314f;
+}
+
+.gummybear {
+    width: 100%;
+    border-bottom: 5px solid #34314f;
+}
+
+.boxtext {
+    border: 2px solid #f2f2f2;
+    padding-left: .5em; 
+    padding-right:;
+    padding-bottom: .75em;
+    padding-top: .75em;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+/*Footer*/
+
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #9dcbcf;
+    border-top: 4px solid #947e92;
+}
+
+/*Different types of types */
+
+h1 {
+    font-family: 'bebasregular';
+    text-align: center;
+    color: #e5e8f2;
+    font-size: 2.75em;
+    border: 2px dashed #ffffff;
+    padding: .5em;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+h2 {
+    font-family: 'bebasregular';
+    text-align: center;
+    color: #b8c6d3;
+    width: 67%;
+    margin-left: 3em;
+    margin-top: .5em;
+    font-size: 1.75em;
+}
+
+h3 {
+    font-family: 'bebasregular';
+    text-align: center;
+    margin-left: -1.75em;
+    color: #6f4f8f;
+    font-size: 1.25em;
+    padding-left: 1.5em;  
+    padding-bottom: .5em; 
+}
+
+h4 {
+    font-family: 'source_sans_proregular';
+    text-align: justify;
+    width: 80%;
+    margin-left: 1em;
+    margin-top: .5em;
+    color: #808080;
+}
+
+h5 {
+    font-family: 'bebasregular';
+    text-align: right;
+    color: #72678e;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-right: 5.5em;
+}

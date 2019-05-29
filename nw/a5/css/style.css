@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+.bigwrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+body {
+
+}
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.eot');
+    src: url('../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20141208-140730/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'chunkfiveroman';
+    src: url('../fonts/webfontkit-20141208-140853/chunkfive-webfont.eot');
+    src: url('../fonts/webfontkit-20141208-140853/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20141208-140853/chunkfive-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20141208-140853/chunkfive-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20141208-140853/chunkfive-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20141208-140853/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'antoniobold';
+    src: url('../fonts/webfontkit-20141208-164122/antonio-bold-webfont.eot');
+    src: url('../fonts/webfontkit-20141208-164122/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20141208-164122/antonio-bold-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20141208-164122/antonio-bold-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20141208-164122/antonio-bold-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20141208-164122/antonio-bold-webfont.svg#antoniobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+	font-family: 'chunkfiveroman';
+    float: left;
+    font-size: 4.25em;
+    margin-bottom: 0em;
+    margin-top: .45em;
+}
+
+h2 {
+    font-family: 'antoniobold';
+    font-size: 3em;
+}
+
+a {
+    font-family: 'quicksandregular';
+}
+
+p {
+    font-family: 'quicksandregular';
+}
+
+a:link {
+    color: #59554E;
+    text-decoration: none;
+}
+
+a:visted {
+    color: #59554E;
+    font-family: 'Helvetica', arial, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A1C1BE;
+    text-decoration: none;
+}
+
+a:active {
+    color: #59554E;
+    text-decoration: none;
+}
+
+.header {
+	padding-left: 4.25em;
+    padding-top: 2em;
+}
+
+.lpsumt {
+
+}
+
+.lpsumtext {
+    margin-left: 19.5em;
+    margin-top: 2.5em;
+}
+
+.lp1t {
+    padding-top: 6em;
+}
+
+.lp1 {
+    margin-left: 19.5em;
+    margin-top: -20.5em;
+}
+
+.lp2t {
+    padding-top: 5em;
+}
+
+.lp2 {
+    margin-left: 19.5em;
+    margin-top: -6.5em;
+}
+
+.lp3t {
+    padding-top: 5em;
+}
+
+.lp3 {
+    margin-left: 19.5em;
+    margin-top: -16em;
+}
+
+.lp4t {
+    padding-top: 6em;
+}
+
+.lp4 {
+    margin-left: 19.5em;
+    margin-top: -11em;
+}
+
+.ad1 {
+    padding-left: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.sbsumt {
+
+}
+
+.sbsumtext {
+    margin-left: 19.5em;
+    margin-top: 3.75em;
+}
+
+.sb1t {
+    
+}
+
+.sb1 {
+    margin-left: 19.5em;
+    margin-top: -20.5em;
+}
+
+.sb2t {
+    padding-top: 6em;
+}
+
+.sb2 {
+    margin-left: 19.5em;
+    margin-top: -11em;
+}
+
+.ad2 {
+    padding-left: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.footer {
+    text-decoration: none;
+    padding-left: 28em;
+}

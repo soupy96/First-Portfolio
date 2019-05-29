@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document created April, 2015 */
+/*
+Theme Name: boardwalk Child Theme
+Theme URI: http: //interactive-media-arts.ca/
+Description: boardwalk child theme
+Author: Michael Campbell / WordPress Theme Directory / Interactive Media Arts
+Author URI: http: //interactive-media-arts.ca/
+Template: boardwalk
+Version: 0.1
+*/
+/* Importing Parent Theme style sheet */
+ @import url("../boardwalk/style.css");
+ 
+ /* Your Child Theme Rules start here */

@@ -1,0 +1,65 @@
+body {
+	background: url(../a6images/ideas/bg/bg.png);
+	text-align: center;
+}
+
+.wrapper {
+	margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.a {
+	margin-left: -26em;
+	margin-top: -.5em;
+}
+
+.mc {
+	margin-left: -33em;
+}
+
+.n {
+	margin-top: -10em;
+	margin-left: 0em;
+}
+
+.dc {
+	margin-left: 40em;
+}
+
+.dd {
+	margin-left: -5.5em;
+	margin-top: -12.5em;
+}
+
+.vc{
+	margin-left: 15.5em;
+	margin-top: 2.5em;
+}
+
+.ws {
+	margin-top: -34em;
+	margin-left: 13em;
+}
+
+.about {
+	margin-left: -21em;
+	margin-top: 18em;
+}
+
+.di {
+	margin-top: 1.5em;
+}
+
+.wd1 {
+	margin-left: 40em;
+	margin-top: -15em;
+}
+
+.wd2 {
+	margin-left: -30em;
+}
+
+.rm{
+	margin-left: 25em;
+}

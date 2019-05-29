@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+.leftheader {
+	width: 30%;
+	border-radius: 0;
+	height: 5em;
+	margin-top: 0em;
+	border-bottom: .7em white solid;
+	margin-right: 0em;
+	float: none;
+}
+	
+.rightheader {
+	float: left;
+	margin-left: 0em;
+	margin-top: 0em;
+	width: 30%;
+	border-radius: 0em;
+	height: 67em;
+	margin-right: 0em;
+}
+
+.tinyicons {
+	border-top: .7em white solid;
+	border-bottom: .7em white solid;
+	padding-right: 2.75em;
+	padding-left: .20em;
+}
+
+nav {
+	margin-left: 0em;
+}
+
+nav ul {
+	padding: 0em;
+	padding-right: 0em;
+}
+
+nav ul li {
+	float: none;
+}
+
+nav ul li a {
+
+}
+
+.blue {
+	width: 30%;
+	float: left;
+	margin-top: -5em;
+	margin-left: .5em;
+}
+
+.boxes {
+	width: 80%;
+}
+
+.darkblue {
+	float: left;
+	width: 34.75%;	
+	margin-top: 13em;
+	margin-left: -21.8em;
+}
+
+.greenvideo {
+	float: left;
+	width: 30%;
+	margin-top: -5em;
+	height: 23em;
+}
+
+.music {
+	padding-left: 2em;
+	padding-top: 1.5em;
+	margin-bottom: 0em;
+}
+
+.vsauce {
+	padding-left: 2em;
+	padding-top: 1.5em;
+	margin-bottom: 0em;
+}
+
+.howto {
+	font-size: 1em;
+	margin-top: 21.75em;
+}
+
+.purple {
+	float: left;
+	margin-left: .5em;
+	width: 66.25%;
+}
+
+.dashboard {
+	text-align: left;
+	padding-left: 1em;
+}
+
+.person {
+	padding-top: .25em;
+	padding-left: 3em;
+}
+
+.profile {
+	font-size: 1.25em;
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 3.5em;
+}
+
+.cloud {
+	font-size: 1.25em;
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 4.75em;
+}
+
+.mess {
+	font-size: 1.25em;
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 4em;
+}
+
+.set {
+	font-size: 1.25em;
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 3.5em;
+}
+
+.lightpurple {
+	float: left;
+	margin-left: .5em;
+	width: 66.25%;
+}
+
+.boxes2 {
+	width: 45%;
+}
+
+.comments {
+	float: left;
+	margin-left: 28em;
+	width: 40%;
+}
+
+.yellow {
+	border-top-right-radius: 0em;
+	border-bottom-left-radius: 25px;
+	margin-left: .5em;
+	width: 48.5%;
+	float: left;
+	margin-right: 0em;
+}
+
+.gearsnow {
+	margin-left: 1em;
+	margin-right: 0em;
+}
+
+.bottomgreen {
+	float: left;
+	width: 18%;
+	border-bottom-left-radius: 0em;
+	border-top-right-radius: 25px;
+	margin-left: 49.7em;
+	height: 15em;
+	margin-top: -15em;
+	text-align: center;
+
+}
+
+.datedate {
+	font-size: 1.25em;
+}
+
+.doublerainbow {
+	float: left;
+	margin-left: 3em;
+	margin-top: 0em;
+}
+
+.degrees {
+	display: none;
+}
+
+.house {
+	background-color: #ff548f;
+	height: 9em;
+	width: 25%;
+	padding: 1em;
+	float: left;
+	margin: .25em;
+	border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px;
+    display: none;
+}
+
+.media {
+	background-color: #aad452;
+	height: 9em;
+	width: 25%;
+	padding: 1em;
+	float: left;
+	margin: .25em;
+	border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px;
+    display: none;
+}
+
+.purpleshapes {
+	background-color: #9061c2;
+	height: 9em;
+	width: 25%;
+	padding: 1em;
+	float: left;
+	margin: .25em;
+	border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px;
+    display: none;
+}
+
+.arrow {
+	background-color: #63d3ff;
+	height: 9em;
+	width: 25%;
+	padding: 1em;
+	float: left;
+	margin: .25em;
+	border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px;
+    display: none;
+}
+
+.yw {
+	background-color: #f9c44e;
+	height: 9em;
+	width: 25%;
+	padding: 1em;
+	float: left;
+	margin: .25em;
+	border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px;
+    display: none;	
+}
+
+.phoneicons {
+	display: block;
+	width: 75%;
+	margin-left: 1.25em;
+	display: none;
+}
+
+.phoneiconsaa {
+	display: block;
+	width: 50%;
+	margin-left: 2.5em;
+	display: none;
+}
+
+.phoneiconsbb {
+	display: block;
+	width: 75%;
+	margin-left: 1.25em;
+	margin-top: 1em;
+	display: none;
+}
+
+.phoneiconscc {
+	display: block;
+	width: 75%;
+	margin-left: 1.25em;
+	margin-top: 2em;
+	display: none;
+}

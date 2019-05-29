@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Final - About Us</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css" media="all"/>
+   <link rel="stylesheet" type="text/css" href="css/tablet.css" media="all and (max-width:1024px) and (min-width:600px)" />
+   <link rel="stylesheet" type="text/css" href="css/phone.css" media="all and (max-width:600px) and (min-width:320px)" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+ 
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+ 
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>	
+	<body>
+	<section class="topimagebox">
+		<img class="topimage" src="../images/topimage.png" alt="Logo" />
+	</section>
+	<section class="bluebar">
+	</section>
+		<nav class="clearfix">  
+    		<ul class="clearfix">  
+        		<li><a href="../index.html">HOME</a></li>  
+        		<li><a href="aboutus/aboutus.html">ABOUT US</a></li>  
+       	 		<li><a href="../findus/findus.html">FIND US</a></li>  
+        		<li><a href="../events/events.html">EVENTS</a></li>  
+    		</ul>  
+    		<a href="#" id="pull">Menu</a>  
+		</nav>
+		<section class="home">
+			<p>
+				about us
+			</p>
+		</section>
+		<section class="box">
+			<h1>
+				Pie cake marshmallow icing pie gummies gummi bears
+			</h1>
+		</section>
+		<section class="colourtext">
+			<h2>
+				Cotton candy tiramisu <span id="candy"> candy </span> tootsie roll cake bonbon I love. Jelly beans <span id="candycandy"> chocolate </span> macaroon tootsie roll bear claw <span id="candycandycandy"> powder </span> bear claw.
+			</h2>
+		</section>
+		<section class="circle">
+			<img src="../images/circle.png" class="circlecircle" alt="Circle" />
+		</section>
+		<section class="line">
+		</section>
+		<section class="infoone">
+			<article class="febfifteen">
+				<img src="../images/marshmellow.png" alt="Martshmellow" class="marshmellow" />
+				<div class="arrow">
+					&#9660;
+				</div>
+				<div class="boxtext">
+					<h3>
+						Marshmallow cotton
+					</h3>
+					<h4>
+						Biscuit gummi bears macaroon muffin. I love candy canes chocolate candy pastry dessert. Tiramisu biscuit icing danish icing gingerbread candy canes.
+					</h4>
+				</div>
+			</article>
+			<article class="febfifteen">
+				<img src="../images/Candy.png" alt="Candy" class="candy" />
+				<div class="arrow">
+					&#9660;
+				</div>
+
+				<div class="boxtext">
+					<h3>
+						candy candy
+					</h3>
+					<h4>
+						Marshmallow soufflé jelly sugar plum biscuit danish. I love marshmallow jelly fruitcake icing gummies bonbon toffee jelly. Danish I love biscuit bonbon oat cake.
+					</h4>
+				</div>
+			</article>
+			<article class="febfifteen">
+				<img src="../images/pie.png" alt="Pie" class="pie" />
+				<div class="arrow">
+					&#9660;
+				</div>
+
+				<div class="boxtext">
+					<h3>
+						Pie cake marshmallow
+					</h3>
+					<h4>
+						Cotton candy tiramisu candy tootsie roll cake bonbon I love. Jelly beans chocolate macaroon tootsie roll bear claw apple pie I love powder bear claw.
+					</h4>
+				</div>
+			</article>
+			<article class="febfifteen">
+				<img src="../images/gummybear.png" alt="Gummy Bears" class="gummybear" />
+				<div class="arrow">
+					&#9660;
+				</div>
+
+				<div class="boxtext">
+					<h3>
+						Biscuit gummi bears
+					</h3>
+					<h4>
+						Brownie I love bear claw I love ice cream cotton candy lemon drops halvah. Marshmallow powder I love I love jujubes.
+					</h4>
+				</div>
+			</article>
+			<p class="clearfloat"> 
+				&nbsp;
+			</p>
+		</section>
+		<section class="footer">
+			<h5>
+				© IDEA.COM 2014 - 2015
+			</h5>
+		</section>
+	</body>
+</html>

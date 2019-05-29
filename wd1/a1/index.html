@@ -1,0 +1,883 @@
+<!doctype html>
+
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Assignment 1</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>	
+<body>
+<img src="images/banner.jpg" alt="Banner" class="banner"/> 
+<section class="wrapper">
+<section class="green">
+	<section class="whitebox">
+		<h1>
+			Vows
+		</h1>
+		<h2>
+		<div class="red"> Asynchronous </div> <div class="biggreen"> behaviour </div>
+			<div class="biggreen3"> driven </div> <div class="red2"> development </div> <div class="biggreen2"> for Node. </div>
+		</h2>
+		<h6 class="greentext">
+			There are two reasons why we might want asynchronous testing. The first, and obvious reason is that node.js is asynchronous, and therefore our tests should be. The second reason is to make tests which target I/O run much faster, by running them concurrently.
+		</h6>
+	</section>
+	<section class="besidewhitebox">
+		<h4 class="top">
+			Write some vows, execute them:
+		</h4>
+		<section class="firstboxingreen">
+			<p>
+				$ vows test/* --spec
+			</p>
+		</section>
+		<h4 class="top">
+			Get the report, make sure you kept your word.
+		</h4>
+		<section class="secondboxingreen">
+			<p class="normal">
+				A non-promise return value
+			</p>
+			<p class="greeninbox">
+				&#10004; should be converted to a promise
+			</p>
+			<p class="normal">
+				A topic not emitting an error
+			</p>
+			<p class="greeninbox">
+				&#10004; should pass null if the test is expecting 
+				<p class="error">an error</p>
+			</p>
+			<p class="greeninbox">
+				&#10004; should pass the result otherwise
+			</p>
+			<p class="normal">
+				A topic emitting an error
+			</p>
+			<p class="greeninbox">
+				&#10004; shouldn't raise an exception if the test
+				<p class="error">expects it</p>
+			</p>
+			<p class="normal">
+				A context with a nested context
+			</p>
+			<p class="greeninbox">
+				&#10004; has access tot he environment
+			</p>
+			<p class="blueinbox">
+				- can make coffee
+			</p>
+			<p class="normal">
+				A nested context
+			</p>
+			<p class="greeninbox">
+				&#10004; should have access tot he parent topics
+			</p>
+			<p class="normal">
+				A nested context with no topics
+			</p>
+			<p class="greeninbox">
+				&#10004; should pass the parent topics down
+			</p>
+			<p class="seperate">
+				&#10004; <div class="ok">OK</div> <p class="whatever"> &#187; 7 honored &#183; pending </p> <div class="numbers">(0.112s)</div>
+			</p>
+		</section>
+	</section>
+</section>
+<nav>
+     <ul>
+		<li><a href="#">intro</a></li>
+		<li><a href="#">guide</a>
+			<ul>
+	     		<li><a href="#">Structure of a Test Suite</a></li>
+	     		<li><a href="#">How topics work</a></li>
+	     		<li><a href="#">Running a Suite</a></li>
+	     		<li><a href="#">Asynchronous Testing</a></li>
+	     		<li><a href="#">Assertions</a></li>
+	     		<li><a href="#">Macros</a></li>
+         	</ul>
+         </li>
+		<li><a href="#">installing</a></li>
+		<li><a href="#">reference</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">source</a></li>
+		<a href="http://git-scm.com/" target="_blank"> <img class="git" src="images/git.png" alt="Git"/></a>
+     </ul>
+</nav>
+<section class="black">
+	<section class="synopsis">
+		<h5>
+			Synopsis
+		</h5>
+		<br>
+		<h3>
+			Vows is a 
+			<h3 class="synopsis1">behavior driven development</h3> 
+			<h3 class="middle">framework for </h3> 
+			<h3 class="synopsis2">Node.js.</h3>
+		<h3 class="after">
+			<br>
+			<br>
+			Vows was built fromt he ground up to test asynchronous code. It executes your test in parallel when it makes sense, and sequentially when there are dependencies.
+			<br>
+			<br>
+			Emphasis was put on speed of execution, clarity and user experience.
+			<br>
+			<br>
+			Here's a simple example, describing 'division by zero':
+		</h3>
+		<section class="firstboxinblack">
+			<p class="top1">
+				// division-by-zero-test.js
+			</p>
+			<p class="top2">
+				<p class="top24">
+					var
+				</p>
+				<p class="top27">
+					vows = require(
+				</p>
+				<p class="top25">
+					'vows'
+				</p>
+				<p class="top26">
+					),
+				</p>
+			</p>
+			<p class="top3">
+				<p class="top31">
+					assert = require(
+				</p>
+				<p class="top32">
+					'assert'
+				</p>
+				<p class="top33">
+					);
+				</p>
+			</p>
+			<p class="top4">
+				// Create a Test Suite
+			</p>
+			<p class="top5">
+				<p class="top51">
+					vows.describe(
+				</p>
+				<p class="top52">
+					'Division by Zero'
+				</p>
+				<p class="top53">
+					).addBatch({
+				</p>
+			</p>
+			<p class="top6">
+				<p class="top61">
+					'when dividing a number by zero'
+				</p>
+				<p class="top62">
+					: {
+				</p>
+			</p>
+			<p class="top7">
+				<p class="top71">
+					topic:
+				</p>
+				<p class="top72">
+					function 
+				</p>
+				<p class="top73">
+					() { 
+				</p>
+				<p class="top74">
+					return 
+				</p>
+				<p class="top75">
+					42
+				</p>
+				<p class="top76">
+					/
+				</p>
+				<p class="top77">
+					0
+				</p>
+				<p class="top78">
+					},
+				</p>
+			</p>
+			<p class="top8">
+				<p class="top81">
+					'we get Infinity'
+				</p>
+				<p class="top82">
+					:
+				</p>
+				<p class="top83"> 
+					function
+				</p>
+				<p class="top84"> 
+					(topic) {
+				</p>
+			</p>
+			<p class="top9">
+				<p class="top91">
+					assert.equal (topic,
+				</p>
+				<p class="top92"> 
+					Infinity
+				</p>
+				<p class="top93">
+					);
+				</p>
+			</p>
+			<p class="top10">
+				}
+			</p>
+			<p class="top11">
+				},
+			</p>
+			<p class="top12">
+				<p class="top121">
+					'but when dividing zero by zero'
+				</p>
+				<p class="top122">
+					: {
+				</p>
+			</p>
+			<p class="top13">
+				<p class="top131">
+					topic:
+				</p>
+				<p class="top132"> 
+					function
+				</p> 
+				<p class="top133">
+					() {
+				</p>
+				<p class="top134">
+					return
+				</p>
+				<p class="top135"> 
+					0
+				</p>
+				<p class="top136"> 
+					/
+				</p>
+				<p class="top137"> 
+					0
+				</p>
+				<p class="top138"> 
+					},
+				</p>
+			</p>
+			<p class="top14">
+				<p class="top141">
+					'we get a value which'
+				</p>
+				<p class="top142">
+					: {
+				</p>
+			</p>
+			<p class="top15">
+				<p class="top151">
+					'is not a number'
+				</p>
+				<p class="top152">
+					:
+				</p>
+				<p class="top153"> 
+					function
+				</p>
+				<p class="top154"> 
+					(topic) {
+				</p>
+			</p>
+			<p class="top16">
+				assert.notNaN (topic);
+			</p>
+			<p class="top17">
+				},
+			</p>
+			<p class="top18">
+				<p class="top181">
+					'is not equal to itself'
+				</p>
+				<p class="top182">
+					:
+				</p>
+				<p class="top183"> 
+					function
+				</p>
+				<p class="top184"> 
+					(topic) {
+				</p>
+			</p>
+			<p class="top19">
+				assert.notEqual (topic, topic);
+			</p>
+			<p class="top20">
+				}
+			</p>
+
+			<p class="top21">
+				}
+			</p>
+			<p class="top22">
+				}
+			</p>
+			<p class="top23">
+				}).run();
+			</p>
+			<p class="top100">
+				// Run it
+			</p>
+		</section>
+		<h3>
+			And run it:
+		</h3>
+		<section class="secondboxinblack">
+			<p>
+				$ node division-by-zero-test.js
+			</p>
+		</section>
+		<section class="sbottomborder">
+		</section>	
+	</section>
+</section>
+<section class="yellow">
+	<section class="installing">
+		<h5 class="h5title">
+			Installing
+		</h5>
+		<h3 class="h5title">
+			<h3 class="npm">
+				The easiest way to install Vows, is via
+			</h3>
+			<h3 class="npma"> 
+				npm
+			</h3>
+			<h3 class="npmb">
+				, the node package manager, as so:
+			</h3>
+		</h3>
+		<section class="firstboxinyellow">
+			<p class="h5title">
+				$ npm install vows
+			</p>
+		</section>
+		<h3 class="h5title">
+			This will get you the latest stable version. If you want the bleeding edge, try:
+		</h3>
+		<section class="secondboxinyellow">
+			<p class="h5title">
+				$ npm install vows@latest
+			</p>
+		</section>
+	</section>
+</section>
+<section class="green">
+	<section class="guide">
+		<h5 class="h5title">
+			Guide
+		</h5>
+		<h3 class="h5titlea">
+			To understand Vows, we're going to start witha general overview of the different components inolved in writing tests, and then go through some of them in more detail.
+		</h3>
+		<br>
+		<section class="gbottomborder">
+		</section>	
+		<br>
+		<h3 class="h5titles">
+			Structure of a test suite
+		</h3>
+		<br>
+		<br>
+		<h3 class="h5titleb">
+			Test suite Vows are the largest unit of tests. The convention is to have one test suite per file, and have the suite's subject match the file name. Test suites are created with 
+			<p class="vows">
+				vows.describe
+			</p>
+			<p class="period">
+				.
+			</p>
+		</h3>
+		<section class="firstboxinyellow">
+			<p class="h5title">
+				var suite = vows.describe('subject');
+			</p>
+		</section>
+		<h3 class="h5title">
+			<h3 class="sum">
+				Summary
+			</h3>
+			<br>
+			<br>
+			A <i>Suite</i> is an object which contains zero or more <i>batches</i>, and can be executed or exported.
+			<br>
+			<br>
+			A <i>batch</i> is an object literal, representing a structure of nested <i>contexts.</i>
+			<br>
+			<br>
+			A <i>context</i> is an object with an optional <i>topic</i>, zero or more <i>vows</i> and zero or more <i>sub-contexts.</i>
+			<br>
+			<br>
+			A <i>topic</i> is either a value or a function which can execute asynchronous code.
+			<br>
+			<br>
+			A <i>vow</i> is a function which recieves the <i>topic</i> as an argument, and runs assertions on it.
+			<br>
+			<br>
+			With that in mind, we can imagine the following grammar:
+			<section class="secondboxinyellow">
+				<p class="h5titleca">
+					Suite
+				</p>
+				<p class="smallblacka">
+					&rarr;
+				</p>
+				 <p class="h5titlecb"> 
+				 	Batch
+				 </p>
+				 <p class="smallblackb">
+				 	*
+				 </p>
+				<p class="h5titlecc">
+					Batch 
+				</p>
+				<p class="smallblackc">
+					&rarr; 
+				</p>
+				<p class="h5titlecd">
+					Context
+				</p>
+				<p class="smallblackd">
+					*
+				</p>
+				<p class="h5titlece">
+					Context
+				</p> 
+				<p class="smallblacke">
+					&rarr; 
+				</p>
+				<p class="h5titlecf">
+					Topic
+				</p>
+				<p class="smallblackf">
+					? 
+				</p>
+				<p class="h5titlecg">
+					Vow
+				</p>
+				<p class="smallblackg">
+					* 
+				</p>
+				<p class="h5titlech">
+					Context
+				</p>
+				<p class="smallblackh">
+					*
+				</p>
+			</section>
+			And when run, we get:
+			<section class="thirdboxinyellow">
+				<p class="h5titleaaa">
+					GET   /
+				</p>
+				<p class="lowerarrow">
+					&#10004;
+				</p>
+				<p class="boxedgreentext">
+					should respond witha 200 OK
+				</p>
+				<p class="h5titleaaa">
+					POST   /
+				</p>
+				<p class="lowerarrow">
+					&#10004;
+				</p>
+				<p class="boxedgreentext">
+					should resond with a 405 Method Not Allowed
+				</p>
+				<p class="h5titleaaa">
+					GET   /resources (no key)
+				</p>
+				<p class="lowerarrow">
+					&#10004;
+				</p>
+				<p class="boxedgreentext">
+					should respond woth 403 Forbidden
+				</p>
+				</p>
+			</section>
+			The fourth context is a little more complex, as it has two vows, but I'll let you figure that one out!
+		</h3>
+	</section>
+</section>
+<section class="secondblack">
+	<section class="reference">
+		<h5>
+			Reference
+		</h5>
+		<h3>
+			The CLI and assertion module are documented here.
+		</h3>
+		<section class="rbottomborder">
+		</section>
+		<h3 class="test">
+			Test Runner
+		</h3>
+		<section class="firstboxinsecondblack">
+			<p class="na">
+				vows [
+			</p>
+			<p class="bluea">
+				FILE
+			</p>
+			<p class="nb">
+				, ...] [options]
+			</p>
+		</section>
+		<section class="rrbottomborder">
+		</section>
+		<h3>
+			Options
+		</h3>
+			<h3 class="left">
+				-v, --verbose
+			</h3>
+			<h3 class="right">
+				Verbose mode
+			</h3>
+			<h3 class="left">
+				-w, --watch
+			</h3>
+			<h3 class="right">
+				Watch mode
+			</h3>
+			<h3 class="left">
+				-m 
+				<h3 class="blueb">
+					STRING
+				</h3>
+			</h3>
+			<h3 class="right">
+			     String matching: Only run tests with 
+			     <h3 class="bluec">
+			     	STRING
+			     </h3>
+			     <h3 class="rightright1">
+			     	in their title
+			     </h3>
+			</h3>
+			<h3 class="left">
+				-r
+				<h3 class="blued">
+					REGEXP
+				</h3>
+			</h3>
+			<h3 class="right">
+			     Regexp matching: Only run tests with 
+			     <h3 class="bluee">
+			     	REGEXP
+			     </h3> 
+			    <h3 class="rightright2">
+			    	in thier title
+			    </h3>
+			</h3>
+			<h3 class="left">
+				--json
+			</h3>
+			<h3 class="right">
+			     Use Json reporter
+			</h3>
+			<h3 class="left">
+				--spec
+			</h3>
+			<h3 class="right">
+			     Use Spec reporter
+			</h3>
+			<h3 class="left">
+				--dot-matrix
+			</h3>
+			<h3 class="right">
+			     Use Dot-Matrix reporter
+			</h3>
+			<h3 class="left">
+				--version
+			</h3>
+			<h3 class="right">
+			     Show version
+			</h3>
+			<h3 class="left">
+				--s, silent
+			</h3>
+			<h3 class="right">
+			    Don't report
+			</h3>
+			<h3 class="left">
+				--help
+			</h3>
+			<h3 class="right">
+			    Show help
+			</h3>
+			<h3 class="ass">
+				Assertions functions
+			</h3>
+			<h3 class="equal">
+				equality
+			</h3>
+			<section class="secondboxinsecondblack">
+			<p class="leftleft1">
+				assert.equial
+			</p>
+				<p class="white1">
+				    (
+				</p>
+				<p class="rednumbers1">
+					4
+				</p>
+				<p class="white2">
+					,
+				</p>
+				<p class="rednumbers2">
+					4
+				</p>
+				<p class="white3">
+					);
+				</p>
+			<p class="leftleft2">
+				assert.strictEqual
+			</p>
+				<p class="white4">
+				    (
+				</p>
+				<p class="rednumbers3">
+					4
+				</p>
+				<p class="white5">
+					>
+				</p>
+				<p class="rednumbers4">
+					2
+				</p>
+				<p class="white6">
+					,
+				</p>
+				<p class="orange1">
+					true
+				</p>
+				<p class="white7">
+					);
+				</p>
+			<p class="leftleft3">
+				assert.notEqual
+			</p>
+				<p class="white8">
+				    (
+				</p>
+				<p class="rednumbers5">
+					4
+				</p>
+				<p class="white9">
+					,
+				</p>
+				<p class="rednumbers6">
+					2
+				</p>
+				<p class="white10">
+					);
+				</p>
+			<p class="leftleft4">
+				assert.notStrictEqual
+			</p>
+				<p class="white11">
+				    (
+				</p>
+				<p class="rednumbers7">
+					1
+				</p>
+				<p class="white12">
+					,
+				</p>
+				<p class="orange2">
+					true
+				</p>
+				<p class="white13">
+					);
+				</p>
+			<p class="leftleft5">
+				assert.deepEqual
+			</p>
+				<p class="white14">
+				    ([
+				</p>
+				<p class="rednumbers9">
+					4
+				</p>
+				<p class="white15">
+					,
+				</p>
+				<p class="rednumbers10">
+					2
+				</p>
+				<p class="white16">
+					], [
+				</p>
+				<p class="rednumbers11">
+					4
+				</p>
+				<p class="white17">
+					,
+				</p>
+				<p class="rednumbers12">
+					2
+				</p>
+				<p class="white18">
+					]);
+				</p>
+			<p class="leftleft6">
+				assert.notDeepEqual
+			</p>
+				<p class="white19">
+				    ([
+				</p>
+				<p class="rednumbers13">
+					4
+				</p>
+				<p class="white20">
+					,
+				</p>
+				<p class="rednumbers14">
+					2
+				</p>
+				<p class="white21">
+					], [
+				</p>
+				<p class="rednumbers15">
+					2
+				</p>
+				<p class="white22">
+					,
+				</p>
+				<p class="rednumbers16">
+					4
+				</p>
+				<p class="white23">
+					]);
+				</p>
+			</section>
+			<h3 class="exceptions">
+				exceptions
+			</h3>
+		</h3>
+		<section class="thridboxindsecondblack">
+			<p class="assert1">
+				assert.throws(
+			</p>
+			<p class="function">
+				function
+			</p>
+			<p class="whiteshit">
+				() { x + x }, 
+			</p>
+			<p class="smurfs">
+				ReferenceError
+			</p>
+			<p class="morewhiteshit">
+				);
+			</p>
+			<p class="assert2">
+				assert.doesNotThrow(
+			</p>
+			<p class="function2">
+				function
+			</p>
+			<p class="whiteshit2">
+				() { 
+			</p>
+			<p class="uno">
+				1 
+			</p>
+			<p class="doctor">
+				+
+			</p>
+			<p class="unodos">
+				1
+			</p>
+			<p class="braketsandshit">
+				}, 
+			</p>
+			<p class="moresmurfs">
+				Error
+			</p>
+			<p class="morewhiteshit2">
+				);
+			</p>
+		</section>
+	</section>
+</section>
+<section class="thirdgreen">
+	<section class="about">
+		<h5 class="title">
+			About
+		</h5>
+		<h3 class="title">
+			<h3 class="grey1">
+				Vows was developed by 
+			</h3>
+			<h3 class="alex">
+				Alexis Sellier
+			</h3>
+			<h3 class="grey2">
+				, more commonly known as 
+			</h3>
+			<h3 class="cloud">
+				cloudhead.
+			</h3>
+			<h3 class="grey3">
+				It is maintained by 
+			</h3>
+			<h3 class="owww">
+				Charlie Robbins 
+			</h3>
+			<h3 class="grey4">
+				and
+			</h3>
+			<h3 class="motherrussia">
+				Maciej Malecki
+			</h3>
+			<h3 class="grey5">
+				of 
+			</h3>
+			<h3 class="company">
+				Nodejitsu.
+			</h3>
+		</h3>
+	</section>
+</section>
+<section class="footer">
+	<section class="textinfooter">
+		<h4 class="darkknight">
+			powered by 
+		</h4>
+		<h4 class="brightorange">
+			toto
+		</h4>
+		<h4 class="coma">
+			,
+		</h4>
+		<h4 class="brightorange2">
+			LESS
+		</h4>
+		<h4 class="and">
+			and
+		</h4>
+		<h4 class="jibber">
+			hijs
+		</h4>
+		<h4 class="text2">
+			Copyright &#169; Alexis Sellier 2010
+		</h4>
+	</section>
+</section>
+</section>
+</html>
